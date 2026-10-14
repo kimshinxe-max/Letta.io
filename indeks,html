@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letta Origin</title>
+    <style>
+        /* Gaya Tampilan Website (CSS) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        /* Bagian Utama (Hero) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1200/400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #00adb5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #007b80;
+        }
+
+        /* Konten Utama */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Website -->
+    <header>
+        <h1>Letta Origin</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Hero / Banner Utama -->
+    <section class="hero" id="home">
+        <h2>Selamat Datang di Letta Origin</h2>
+        <p>Awal dari kreativitas dan inovasi tanpa batas.</p>
+        <button class="btn" onclick="sapaPengunjung()">Klik Saya!</button>
+    </section>
+
+    <!-- Konten Isi Website -->
+    <div class="container">
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p style="margin-top: 10px;">
+                Letta Origin adalah wadah sederhana untuk berbagi ide, karya, dan informasi. Kami berfokus pada kesederhanaan, keindahan, dan fungsionalitas dalam setiap hal yang kami buat.
+            </p>
+        </section>
+
+        <section id="layanan" style="margin-top: 40px;">
+            <h2>Layanan Kami</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Desain Web</h3>
+                    <p>Membuat tampilan website yang rapi dan mudah digunakan.</p>
+                </div>
+                <div class="card">
+                    <h3>Konten Kreatif</h3>
+                    <p>Menyajikan tulisan dan ide-ide kreatif untuk proyek Anda.</p>
+                </div>
+                <div class="card">
+                    <h3>Konsultasi</h3>
+                    <p>Membantu pemula dalam membangun keberadaan digital mereka.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <p>&copy; 2026 Letta Origin. Dibuat dengan penuh semangat.</p>
+    </footer>
+
+    <!-- JavaScript Sederhana -->
+    <script>
+        function sapaPengunjung() {
+            alert('Halo! Terima kasih telah mengunjungi Letta Origin.');
+        }
+    </script>
+
+</body>
+</html>
